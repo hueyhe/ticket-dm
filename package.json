@@ -1,0 +1,15 @@
+{
+  "name": "ticket-dm",
+  "version": "1.0.0",
+  "description": "Ticket script for DaMai",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ticket.js"
+  },
+  "repository": "https://github.com/hueyhe/ticket-dm.git",
+  "author": "Huey <sihonghuey@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^1.16.0"
+  }
+}
