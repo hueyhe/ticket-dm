@@ -8,7 +8,7 @@ const mainUrl = 'https://www.damai.cn/';
 const dota2Url = 'https://detail.damai.cn/item.htm?spm=a2oeg.search_category.0.0.531c58efwCT24N&id=593089517773&clicktitle=2019%20DOTA2%20%E5%9B%BD%E9%99%85%E9%82%80%E8%AF%B7%E8%B5%9B';
 // const dota2Url = 'https://detail.damai.cn/item.htm?spm=a2oeg.home.card_0.ditem_1.591b23e18ScHHd&id=594350362632';
 // 2019/5/24 11:59:59
-const startTime = 1558670399000;
+const startTime = 1558673998000;
 
 (async () => {
   const cluster = await Cluster.launch({
@@ -106,9 +106,15 @@ const startTime = 1558670399000;
     }
 
     // Submit!!!
-    while (true) {
-      await page.click('.submit-wrapper button');
-    }
+    await page.click('.submit-wrapper button');
+
+    await page.waitForFunction(() => {
+      console.log('hanging on...');
+      return false;
+    }, {
+      polling: 100,
+      timeout: 9999999,
+    });
   });
 
   configs.forEach(conf => cluster.queue(conf));
