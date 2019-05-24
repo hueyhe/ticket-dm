@@ -14,6 +14,7 @@ const startTime = 1558670399000;
   const cluster = await Cluster.launch({
     concurrency: Cluster.CONCURRENCY_CONTEXT,
     maxConcurrency: instanceCount,
+    timeout: 9999999,
     puppeteerOptions: {
       headless: false,
       devtools: true,
