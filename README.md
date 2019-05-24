@@ -7,7 +7,7 @@
 $ yarn
 ```
 
-2. 填好 config，cookies 可以对照登录状态下的 cookie，剩下的就是用户名密码和特权码
+2. 填好 config，cookies 可以对照登录状态下的 cookie，剩下的是特权码。数组里可以填多个配置，会并行运行。
 
 3. 到时前两分钟运行
 ```bash

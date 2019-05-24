@@ -66,7 +66,7 @@ debug@^3.1.0:
   dependencies:
     ms "^2.1.1"
 
-debug@^4.1.0:
+debug@^4.1.0, debug@^4.1.1:
   version "4.1.1"
   resolved "https://registry.npm.taobao.org/debug/download/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
   integrity sha1-O3ImAlUQnGtYnO4FDx1RYTlmR5E=
@@ -210,6 +210,13 @@ proxy-from-env@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/proxy-from-env/download/proxy-from-env-1.0.0.tgz#33c50398f70ea7eb96d21f7b817630a55791c7ee"
   integrity sha1-M8UDmPcOp+uW0h97gXYwpVeRx+4=
+
+puppeteer-cluster@^0.16.0:
+  version "0.16.0"
+  resolved "https://registry.npm.taobao.org/puppeteer-cluster/download/puppeteer-cluster-0.16.0.tgz#7c9e9dd511a8a3c39fa5cb818a7f495fb8595466"
+  integrity sha1-fJ6d1RGoo8OfpcuBin9JX7hZVGY=
+  dependencies:
+    debug "^4.1.1"
 
 puppeteer@^1.16.0:
   version "1.16.0"

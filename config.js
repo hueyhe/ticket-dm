@@ -27,9 +27,7 @@ const cookies = [{
   return cookie;
 });
 
-module.exports = {
-  username: '',
-  password: '',
+module.exports = [{
   prerogativeCode: '',
   cookies,
-};
+}];
